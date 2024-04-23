@@ -30,6 +30,9 @@ export const AppReducer = (state, action) => {
                     ...state
                 }
             }
+
+            
+
             case 'RED_EXPENSE':
                 const red_expenses = state.expenses.map((currentExp)=> {
                     if (currentExp.name === action.payload.name && currentExp.cost - action.payload.cost >= 0) {
