@@ -3,9 +3,16 @@ import React, { useContext, useState } from 'react';
 import { AppContext } from '../context/AppContext';
 
 const Budget = () => {
-    const { budget } = useContext(AppContext);
+    const { budget, remaining} = useContext(AppContext);
     const [newBudget, setNewBudget] = useState(budget);
     const handleBudgetChange = (event) => {
+        if(event.target.value>20000){
+            alert("cannot exceed 20000!!");
+        }
+        else if(event.target.value<(budget-remaining)){
+            alert("cannot be less then spending ");
+        }
+        else
         setNewBudget(event.target.value);
     }
     return (
