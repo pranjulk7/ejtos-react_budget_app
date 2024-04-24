@@ -17,13 +17,13 @@ const Currency = () => {
     
     return (
         <>
-            <div>
+            <div className='alert alert-success'>
                 <label>Currency: {newCurrency}</label>
-                <select id="dropdown" value={newCurrency} onChange={handleChange}>
-                    <option value="$">$ Dollar </option>
-                    <option value="€">€ Euro </option>
-                    <option value="£">£ Pound</option>
-                    <option value="₹">₹ Rupee</option>
+                <select  id="dropdown" value={newCurrency} onChange={handleChange}>
+                    <option value="$">Dollar </option>
+                    <option value="€">Euro </option>
+                    <option value="£">Pound</option>
+                    <option value="₹">Rupee</option>
                 </select>
             </div>
             <br/>

@@ -19,8 +19,9 @@ const App = () => {
         <AppProvider>
             <div className='container'>
                 <h1 className='mt-3'>Company's Budget Allocation</h1>
+                  <div>
                     <div className='row mt-3'>
-                        {
+                     {
                             /* Add Budget component here */
                                         // Budget component
                         <div className='col-sm'>
@@ -28,7 +29,7 @@ const App = () => {
                         </div>
                         }        
 
-                        {
+                     {
                                          //Remaining component
                              <div className='col-sm'>
                                  <Remaining />
@@ -36,7 +37,7 @@ const App = () => {
                             /* Add Remaining component here*/
                         }        
 
-                        {
+                     {
                                          //ExpenseTotal component
                       <div className='col-sm'>
                               <ExpenseTotal />
@@ -44,7 +45,7 @@ const App = () => {
                             /* Add ExpenseTotal component here */
                         }        
                        
-                         {
+                     {
                         <div className='col-sm'>
                         <Currency />
                         <br/>
@@ -52,17 +53,18 @@ const App = () => {
                     
                             /* Add ExpenseItem component here */
                         } 
-                        {
+                        </div>
+                    {
 
-                      <div className='col-sm'>
+                      <div className='col-sm '>
                               <ExpenseList />
                            </div>
                             /* Add ExpenseList component here */
                         }         
                       
-                             
+                            
 
-                        {
+                     {
                         <div className='col-sm'>
                         <AllocationForm />
                      </div>
